@@ -3,30 +3,33 @@
 //
 
 #include "Reader.h"
+#include <iostream>
 using namespace std;
 
-Reader::Reader(String filename){
+Reader::Reader(string filename){
     file.open(filename, ios::in);
     trff();
-    int arr[arraySize] = rff();
+    int *arr = new int[arraySize];
+    arr = rff();
 };
 
 void Reader::trff(){
+    int array[100];
     if (!file) {
         cout << "No such file";
     }
     else{
-        int array[100];
+
         char ch;
         int cnt = 0;
-        String s = "";
+        string s = "";
         while(true){
             file>>ch;
-            if(ch!=" "){
+            if(ch != ' '){
                 s.push_back(ch);
             }
             else{
-                int nm = s.stoi();
+                int nm = stoi(s);
                 array[cnt] = nm;
                 s = "";
             }
@@ -41,22 +44,24 @@ void Reader::trff(){
     }
     int arraySize = size;
 }
-void Reader::rff(){
+
+int* Reader::rff(){
+    int *array = new int[100]  ;
     if (!file) {
         cout << "No such file";
     }
     else{
-        int array[100];
+
         char ch;
         int cnt = 0;
-        String s = "";
+        string s = "";
         while(true){
             file>>ch;
-            if(ch!=" "){
+            if(ch!=' '){
                 s.push_back(ch);
             }
             else{
-                int nm = s.stoi();
+                int nm = stoi(s);
                 array[cnt] = nm;
                 s = "";
             }
@@ -65,8 +70,9 @@ void Reader::rff(){
             cnt++;
         }
     }
-    int newArr[arraySize];
-    for(int i = 0; i<arraySize-1){
+    int size = arraySize;
+    int newArr[size];
+    for(int i = 0; i<arraySize-1; i++){
         newArr[i] = array[i];
     }
 
@@ -75,7 +81,7 @@ void Reader::rff(){
 
 
 Reader::~Reader() {
-    my_file.close();
+    file.close();
 }
 
 

@@ -10,14 +10,15 @@ using namespace std;
 class Reader {
 private:
     fstream file;
-    int arraySize;
-    int arr[];
+
+
 public:
-    Reader(String filename);
+    Reader(string filename);
     ~Reader();
     void trff();
-    int[] rff();
-
+    int* rff();
+    int arraySize;
+    int* arr;
 };
 
 

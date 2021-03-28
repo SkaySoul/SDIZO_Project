@@ -12,8 +12,10 @@
 using namespace std;
  int main(){
  Reader reader("data.txt");
- int array[reader.arraySize] = reader.rff();
-    for(int i= 0; i<;i++){
-
+ int *array = new int[reader.arraySize];
+ array = reader.arr;
+ for(int i = 0; i<reader.arraySize; i++){
+     cout<<array[i];
  }
+
 }
