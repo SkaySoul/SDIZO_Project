@@ -1,4 +1,4 @@
-This project has a most using structures like a:
+This project has a most usable structures like a:
 1. ArrayList
 2. Doubly Linked List
 3. Binary Heap
