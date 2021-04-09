@@ -9,11 +9,19 @@ BinaryHeap::BinaryHeap(unsigned long size) {
     this->size = arraylist->getSize();
 }
 
+BinaryHeap::BinaryHeap(unsigned long arrSize, int *arr){
+    this->arraylist = new ArrayList(0);
+    this->size = 0;
+    for(int i = 0; i<arrSize; i++){
+        addElem(arr[i]);
+    }
+}
+
 BinaryHeap::~BinaryHeap() {
  delete arraylist;
 }
 
-void BinaryHeap::add(int elem) {
+void BinaryHeap::addElem(int elem) {
     unsigned long i = size, parent = (i-1)/2;
     arraylist->addElem(elem);
     while(parent >= 0 && i > 0)  {
@@ -28,45 +36,53 @@ void BinaryHeap::add(int elem) {
     size++;
 }
 
-void BinaryHeap::heapify(unsigned long i){
-unsigned long lch = 2*i+1;
-unsigned long rch = 2*i+2;
+void BinaryHeap::heapify(unsigned long pos){
+unsigned long lch = 2 * pos + 1;
+unsigned long rch = 2 * pos + 2;
 int temp;
     if(lch < size) {
-        if(arraylist->getElem(i) < arraylist->getElem(lch)) {
-            temp = arraylist->getElem(i);
-            arraylist->setElem(arraylist->getElem(lch),i);
+        if(arraylist->getElem(pos) < arraylist->getElem(lch)) {
+            temp = arraylist->getElem(pos);
+            arraylist->setElem(arraylist->getElem(lch), pos);
             arraylist->setElem(temp,lch);
             heapify(lch);
         }
     }
     if(rch < size) {
-        if(arraylist->getElem(i) < arraylist->getElem(rch)) {
-            temp = arraylist->getElem(i);
-            arraylist->setElem(arraylist->getElem(rch),i);
+        if(arraylist->getElem(pos) < arraylist->getElem(rch)) {
+            temp = arraylist->getElem(pos);
+            arraylist->setElem(arraylist->getElem(rch), pos);
             arraylist->setElem(temp,rch);
             heapify(rch);
         }
     }
 }
 
-unsigned long BinaryHeap::getSize(){
-    return size;
+unsigned long BinaryHeap::getSize() {
+    return this->size;
 }
 
-int BinaryHeap::findElem(int elem) {
-    bool isFounded;
-    for(int i = 0; i<size; i++){
-        if(elem == arraylist->getElem(i)){
-            isFounded = true;
-            return i;
-        }
+bool BinaryHeap::findElem(unsigned long startPos, int elem) {
+
+    unsigned long lch = 2*startPos+1;
+    unsigned long rch = 2*startPos+1;
+    if(arraylist->getElem(startPos) == elem){
+        return true;
     }
-    std::cout<<"Element is not founded"<<std::endl;
-    return 1;
+    if(lch>arraylist->getSize()){
+        return false;
+    }
+    bool isFounded = findElem(lch, elem);
+    if (isFounded){
+        return true;
+    }
+    if(rch>arraylist->getSize()){
+        return false;
+    }
+    return findElem(rch, elem);
 }
 
-int BinaryHeap::findElemOnPos(int pos) {
+int BinaryHeap::getElem(int pos) {
     return arraylist->getElem(pos);
 }
 

@@ -10,15 +10,13 @@ using namespace std;
 class Reader {
 private:
     fstream file;
-
-
 public:
-    Reader(string filename);
+    explicit Reader(string path);
     ~Reader();
-    void trff();
-    int* rff();
-    int arraySize;
-    int* arr;
+    void readFromFile();
+    unsigned long arraySize;
+    int *arr;
+    unsigned long getSize();
 };
 
 

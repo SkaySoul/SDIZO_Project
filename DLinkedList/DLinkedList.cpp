@@ -5,203 +5,235 @@
 #include "DLinkedList.h"
 #include <iostream>
 
-DLinkedList* createDLinkedList(unsigned long size) {
-    DLinkedList *temp = (DLinkedList*) calloc(size,sizeof(DLinkedList)*size);
-    temp->head = temp->tail = nullptr;
-    return temp;
+
+DLinkedList::DLinkedList() {
+    this->size = 0;
+    this->head = this->tail = nullptr;
 }
+DLinkedList::DLinkedList(unsigned long arrSize, int *arr) {
+    this->size = 0;
+    this->head = this->tail = nullptr;
+    for (int i = 0; i<arrSize; i++){
+        if (i == 0){
 
-void deleteDLinkedList(DLinkedList **list) {
-    Node *temp = (*list)->head;
-    Node *next = nullptr;
-    while (temp) {
-        next = temp->next;
-        free(temp);
-        temp = next;
-    }
-    free(*list);
-    *list = nullptr;
-}
-
-
-void pushFront(DLinkedList *list, int data) {
-    Node *tmp = (Node*) malloc(sizeof(Node));
-    if (tmp == nullptr) {
-        exit(1);
-    }
-    tmp->value = data;
-    tmp->next = list->head;
-    tmp->prev = nullptr;
-    if (list->head) {
-        list->head->prev = tmp;
-    }
-    list->head = tmp;
-
-    if (list->tail == nullptr) {
-        list->tail = tmp;
-    }
-    list->size++;
-}
-
-int popFront(DLinkedList *list) {
-    Node *prev;
-    int tmp;
-//    if (list->head == nullptr) {
-//        exit(2);
-//    }
-
-    prev = list->head;
-    list->head = list->head->next;
-    if (list->head) {
-        list->head->prev = nullptr;
-    }
-    if (prev == list->tail) {
-        list->tail = nullptr;
-    }
-    tmp = prev->value;
-    free(prev);
-
-    list->size--;
-    return tmp;
-}
-
-void pushBack(DLinkedList *list, int value) {
-    Node *p = (Node*) malloc(sizeof(Node));
-//    if (tmp == nullptr) {
-//        exit(3);
-//    }
-    p->value = value;
-    p->next = nullptr;
-    p->prev = list->tail;
-    if (list->tail) {
-        list->tail->next = p;
-    }
-    list->tail = p;
-
-    if (list->head == nullptr) {
-        list->head = p;
-    }
-//    list->size++;
-}
-
-int popBack(DLinkedList *list) {
-    Node *next;
-    int tmp;
-    if (list->tail == nullptr) {
-        exit(4);
-    }
-
-    next = list->tail;
-    list->tail = list->tail->prev;
-    if (list->tail) {
-        list->tail->next = nullptr;
-    }
-    if (next == list->head) {
-        list->head = nullptr;
-    }
-    tmp = next->value;
-    free(next);
-
-    list->size--;
-    return tmp;
-}
-
-
-Node* getN(DLinkedList *list, size_t index) {
-    Node *tmp = nullptr;
-    size_t i;
-
-    if (index < list->size/2) {
-        i = 0;
-        tmp = list->head;
-        while (tmp && i < index) {
-            tmp = tmp->next;
-            i++;
         }
-    } else {
-        i = list->size - 1;
-        tmp = list->tail;
-        while (tmp && i > index) {
-            tmp = tmp->prev;
-            i--;
+        pushBack(arr[i]);
+
+    }
+}
+
+DLinkedList::~DLinkedList() {
+    while(size!=0){
+     popFront();
+     size--;
+    }
+}
+
+void DLinkedList::pushFront(int elem) {
+    Node *temp = new Node(nullptr, head, elem);
+    if (head != nullptr) {
+        head->prev = temp;
+    }
+    else{
+        tail = temp;
+    }
+    head = temp;
+    size++;
+}
+
+void DLinkedList::popFront() {
+    if (head == nullptr) {
+        std::cout<<"This list already empty!"<<std::endl;
+        return;
+    }
+    if(head == tail){
+        tail = nullptr;
+        delete head;
+        head = nullptr;
+        size--;
+        return;
+    }
+    Node *temp = head->next;
+    head->next->prev = nullptr;
+    delete head;
+    head = temp;
+    size--;
+}
+
+void DLinkedList::popBack() {
+    if (tail == nullptr) {
+        std::cout<<"This list already empty!"<<std::endl;
+        return;
+    }
+    if(head == tail){
+        head = nullptr;
+        delete tail;
+        return;
+    }
+    Node *temp = tail->prev;
+    tail->prev->next = nullptr;
+    delete tail;
+    tail = temp;
+    size--;
+}
+
+void DLinkedList::pushBack(int elem) {
+    Node *temp = new Node(tail, nullptr, elem);
+    if (tail != nullptr) {
+        tail->next = temp;
+    }
+    else{
+        head = temp;
+    }
+    tail = temp;
+    size++;
+}
+
+unsigned long DLinkedList::findElem(int elem) {
+    if (isEmpty()){
+        std::cout<<"This list is empty!"<<std::endl;
+    }
+    Node *temp = head;
+    for (unsigned long i = 0; i<size-1;i++){
+        if(temp->value == elem){
+            return i+1;
+        }
+        else {
+            temp = temp->next;
+            if (temp == nullptr){
+                std::cout<<"Element is not founded"<<std::endl;
+
+            }
         }
     }
-
-    return tmp;
+    return -1;
 }
 
-void insert(DLinkedList *list, size_t index, int value) {
-    Node *elm = nullptr;
-    Node *ins = nullptr;
-    elm = getN(list, index);
-    if (elm == nullptr) {
-        exit(5);
-    }
-    ins = (Node*) malloc(sizeof(Node));
-    ins->value = value;
-    ins->prev = elm;
-    ins->next = elm->next;
-    if (elm->next) {
-        elm->next->prev = ins;
-    }
-    elm->next = ins;
+int DLinkedList::getElem(unsigned long pos) {
+    if (pos>size-1){
+        std::cout<<"Position is too big for list, this list contain only "<< getSize() <<" elements"<<std::endl;
 
-    if (!elm->prev) {
-        list->head = elm;
     }
-    if (!elm->next) {
-        list->tail = elm;
+    if (pos == 0){
+        return head->value;
     }
-
-    list->size++;
+    else if (pos == size-1){
+        return tail->value;
+    }
+    else
+    {
+        if (pos < size % 2) {
+            Node *temp = head;
+            for (unsigned long i = 0; i < pos; i++) {
+                temp = temp->next;
+            }
+            return temp->value;
+        }
+        if (pos > size % 2) {
+            Node *temp = tail;
+            for (unsigned long i = size - 1; i > pos; i--) {
+                temp = temp->prev;
+            }
+            return temp->value;
+        }
+    }
+    return 0;
 }
 
-int deleteNth(DLinkedList *list, size_t index) {
-    Node *elm = nullptr;
-    int tmp = NULL;
-    elm = getN(list, index);
-    if (elm == nullptr) {
-        exit(5);
-    }
-    if (elm->prev) {
-        elm->prev->next = elm->next;
-    }
-    if (elm->next) {
-        elm->next->prev = elm->prev;
-    }
-    tmp = elm->value;
 
-    if (!elm->prev) {
-        list->head = elm->next;
+void DLinkedList::addToPos(unsigned long pos, int elem){
+    if (pos>size){
+        std::cout<<"Error! List contain only "<< size<< " elements"<< std::endl;
+        return;
     }
-    if (!elm->next) {
-        list->tail = elm->prev;
+    Node *temp = head;
+    for (unsigned long i = 0; i<pos-1; i++){
+        temp = temp->next;
     }
-
-    free(elm);
-
-    list->size--;
-
-    return tmp;
+    Node *newNode = new Node(temp,temp->next,elem);
+    temp->next->prev = newNode;
+    temp->next = newNode;
+    size++;
 }
 
-//DLinkedList* fromArray(void *arr, size_t n, size_t size) {
-//    DLinkedList *tmp = nullptr;
-//    size_t i = 0;
-//    if (arr == nullptr) {
-//        exit(7);
-//    }
-//
-//    tmp = createDLinkedList();
-//    while (i < n) {
-//        pushBack(tmp, ((char*)arr + i*size));
-//        i++;
-//    }
-//
-//    return tmp;
-//}
-//
-//int showValue(int index){
-//
-//    return
-//}
+void DLinkedList::addElem(unsigned long pos, int elem) {
+    if (pos == 0){
+        pushFront(elem);
+    }
+    else if (pos == size){
+        pushBack(elem);
+    }
+    else{
+        addToPos(pos,elem);
+    }
+}
+
+void DLinkedList::deleteFromAnyPos(unsigned long pos){
+    Node *temp = head;
+    for (unsigned long i = 0; i<pos; i++){
+        temp = temp->next;
+    }
+    temp->prev->next = temp->next;
+    temp->next->prev = temp->prev;
+    delete temp;
+    size--;
+}
+
+void DLinkedList::deleteElemOnPos(unsigned long pos) {
+    if (pos>size-1){
+        std::cout<<"Error! List contain only "<< size << " elements"<< std::endl;
+        return;
+    }
+    if (pos == 0){
+        popFront();
+        return;
+    }
+    if (pos == size-1){
+        popBack();
+        return;
+    }
+    else{
+        deleteFromAnyPos(pos);
+        return;
+    }
+}
+
+void DLinkedList::deleteElem(int elem) {
+    unsigned long pos = findElem(elem);
+    deleteElemOnPos(pos);
+}
+
+unsigned long DLinkedList::getSize() {
+    return size;
+}
+
+bool DLinkedList::isEmpty(){
+    if (size == 0){
+        return true;
+    }
+    return false;
+}
+
+void DLinkedList::show(){
+    if(isEmpty()){
+    std::cout<<"This list is empty!"<<std::endl;
+        return;
+    }
+    else{
+        Node *temp = head;
+        for (int i = 0; i<size; i++){
+            std::cout<<temp->value;
+            temp= temp->next;
+            if (i<size-1){
+                std::cout<<", ";
+            }
+            else std::cout<<std::endl;
+
+        }
+
+
+    }
+
+}
+
+

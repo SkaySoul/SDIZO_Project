@@ -1,86 +1,61 @@
-//
-// Created by hellf on 3/23/2021.
-//
+
+//Created by hellf on 3/23/2021.
+
 
 #include "Reader.h"
 #include <iostream>
+#include <string>
 using namespace std;
 
-Reader::Reader(string filename){
-    file.open(filename, ios::in);
-    trff();
-    int *arr = new int[arraySize];
-    arr = rff();
-};
-
-void Reader::trff(){
-    int array[100];
-    if (!file) {
-        cout << "No such file";
-    }
-    else{
-
-        char ch;
-        int cnt = 0;
-        string s = "";
-        while(true){
-            file>>ch;
-            if(ch != ' '){
-                s.push_back(ch);
-            }
-            else{
-                int nm = stoi(s);
-                array[cnt] = nm;
-                s = "";
-            }
-            if (file.eof())
-                break;
-        cnt++;
-        }
-    }
-    int size = 1;
-    while (array[size]!=0){
-        size++;
-    }
-    int arraySize = size;
+Reader::Reader(string path){
+    file.open(path, ios::in);
+    this->arraySize = getSize();
+    this->arr = new int[arraySize];
+    readFromFile();
 }
 
-int* Reader::rff(){
-    int *array = new int[100]  ;
-    if (!file) {
-        cout << "No such file";
+
+void Reader::readFromFile(){
+    int val;
+    if(file.is_open()){
+            for(int i = 0; i < arraySize; i++)
+            {
+                file >> val;
+                if(file.fail())
+                {
+                    cout << "File error - READ DATA" << endl;
+                    break;
+                }
+                else
+                    arr[i] = val;
+            }
     }
     else{
-
-        char ch;
-        int cnt = 0;
-        string s = "";
-        while(true){
-            file>>ch;
-            if(ch!=' '){
-                s.push_back(ch);
-            }
-            else{
-                int nm = stoi(s);
-                array[cnt] = nm;
-                s = "";
-            }
-            if (file.eof())
-                break;
-            cnt++;
-        }
+        cout << "File error - OPEN" << endl;
+        return;
     }
-    int size = arraySize;
-    int newArr[size];
-    for(int i = 0; i<arraySize-1; i++){
-        newArr[i] = array[i];
-    }
-
-    return newArr;
 }
 
+unsigned long Reader::getSize(){
+    unsigned long size = 0;
+    if(file.is_open()){
+        if(file.fail()){
+            cout << "File error - READ SIZE" << endl;
+            return -1;
+        }
+        else
+            file >> size;
+    }
+    else{
+        cout << "File error - OPEN" << endl;
+        return -1;
+    }
+
+    return size;
+}
 
 Reader::~Reader() {
+    delete arr;
     file.close();
 }
 

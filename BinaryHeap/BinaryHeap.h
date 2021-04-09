@@ -6,20 +6,23 @@
 #define SDIZO_PROJECT_BINARYHEAP_H
 
 
-class BinaryHeap {
+class BinaryHeap{
 
 private:
+
+
     unsigned long size;
     ArrayList *arraylist;
 public:
+    void addElem(int elem);
+    unsigned long getSize();
+    BinaryHeap(unsigned long arrSize, int *arr);
     explicit BinaryHeap(unsigned long size);
     ~BinaryHeap();
-    void add(int elem);
-    void heapify(unsigned long i);
+    void heapify(unsigned long pos);
     void removeRoot();
-    int findElem(int elem);
-    int findElemOnPos(int pos);
-    unsigned long getSize();
+    int getElem(int pos);
+    bool findElem(unsigned long startPos, int elem);
 };
 
 

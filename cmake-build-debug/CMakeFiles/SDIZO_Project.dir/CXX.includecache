@@ -6,61 +6,41 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/hellf/CLionProjects/SDIZO_Project/ArrayList/ArrayList.cpp
-iostream
--
-ArrayList.h
 C:/Users/hellf/CLionProjects/SDIZO_Project/ArrayList/ArrayList.h
-
-C:/Users/hellf/CLionProjects/SDIZO_Project/ArrayList/ArrayList.h
-
-C:/Users/hellf/CLionProjects/SDIZO_Project/BinaryHeap/BinaryHeap.cpp
-BinaryHeap.h
-C:/Users/hellf/CLionProjects/SDIZO_Project/BinaryHeap/BinaryHeap.h
-iostream
+fstream
 -
 
 C:/Users/hellf/CLionProjects/SDIZO_Project/BinaryHeap/BinaryHeap.h
 ../ArrayList/ArrayList.h
 C:/Users/hellf/CLionProjects/SDIZO_Project/ArrayList/ArrayList.h
 
-C:/Users/hellf/CLionProjects/SDIZO_Project/DLinkedList/DLinkedList.cpp
-DLinkedList.h
 C:/Users/hellf/CLionProjects/SDIZO_Project/DLinkedList/DLinkedList.h
+Node.h
+C:/Users/hellf/CLionProjects/SDIZO_Project/DLinkedList/Node.h
+
+C:/Users/hellf/CLionProjects/SDIZO_Project/DLinkedList/Node.h
+
+C:/Users/hellf/CLionProjects/SDIZO_Project/MainMenu/MainMenu.cpp
+MainMenu.h
+C:/Users/hellf/CLionProjects/SDIZO_Project/MainMenu/MainMenu.h
+../DLinkedList/DLinkedList.h
+C:/Users/hellf/CLionProjects/SDIZO_Project/DLinkedList/DLinkedList.h
+../BinaryHeap/BinaryHeap.h
+C:/Users/hellf/CLionProjects/SDIZO_Project/BinaryHeap/BinaryHeap.h
 iostream
 -
+utility
+-
 
-C:/Users/hellf/CLionProjects/SDIZO_Project/DLinkedList/DLinkedList.h
-Node.h
-C:/Users/hellf/CLionProjects/SDIZO_Project/DLinkedList/Node.h
-
-C:/Users/hellf/CLionProjects/SDIZO_Project/DLinkedList/Node.cpp
-Node.h
-C:/Users/hellf/CLionProjects/SDIZO_Project/DLinkedList/Node.h
-
-C:/Users/hellf/CLionProjects/SDIZO_Project/DLinkedList/Node.h
-
-C:/Users/hellf/CLionProjects/SDIZO_Project/MainMenu/Reader.cpp
+C:/Users/hellf/CLionProjects/SDIZO_Project/MainMenu/MainMenu.h
 Reader.h
 C:/Users/hellf/CLionProjects/SDIZO_Project/MainMenu/Reader.h
-iostream
--
+../ArrayList/ArrayList.h
+C:/Users/hellf/CLionProjects/SDIZO_Project/ArrayList/ArrayList.h
 
 C:/Users/hellf/CLionProjects/SDIZO_Project/MainMenu/Reader.h
 fstream
 -
 iostream
 -
-
-C:/Users/hellf/CLionProjects/SDIZO_Project/main.cpp
-iostream
--
-main.h
-C:/Users/hellf/CLionProjects/SDIZO_Project/main.h
-ArrayList/ArrayList.h
-C:/Users/hellf/CLionProjects/SDIZO_Project/ArrayList/ArrayList.h
-MainMenu/Reader.h
-C:/Users/hellf/CLionProjects/SDIZO_Project/MainMenu/Reader.h
-
-C:/Users/hellf/CLionProjects/SDIZO_Project/main.h
 

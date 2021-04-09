@@ -3,3 +3,10 @@
 //
 
 #include "Node.h"
+
+Node::Node(Node *prev, Node *next, int value) {
+    this->value = value;
+    this->next = next;
+    this->prev = prev;
+}
+

@@ -250,6 +250,60 @@ DLinkedList/Node.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDIZO_Project.dir\build.make CMakeFiles/SDIZO_Project.dir/DLinkedList/Node.cpp.s
 .PHONY : DLinkedList/Node.cpp.s
 
+MainMenu/MainMenu.obj: MainMenu/MainMenu.cpp.obj
+
+.PHONY : MainMenu/MainMenu.obj
+
+# target to build an object file
+MainMenu/MainMenu.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDIZO_Project.dir\build.make CMakeFiles/SDIZO_Project.dir/MainMenu/MainMenu.cpp.obj
+.PHONY : MainMenu/MainMenu.cpp.obj
+
+MainMenu/MainMenu.i: MainMenu/MainMenu.cpp.i
+
+.PHONY : MainMenu/MainMenu.i
+
+# target to preprocess a source file
+MainMenu/MainMenu.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDIZO_Project.dir\build.make CMakeFiles/SDIZO_Project.dir/MainMenu/MainMenu.cpp.i
+.PHONY : MainMenu/MainMenu.cpp.i
+
+MainMenu/MainMenu.s: MainMenu/MainMenu.cpp.s
+
+.PHONY : MainMenu/MainMenu.s
+
+# target to generate assembly for a file
+MainMenu/MainMenu.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDIZO_Project.dir\build.make CMakeFiles/SDIZO_Project.dir/MainMenu/MainMenu.cpp.s
+.PHONY : MainMenu/MainMenu.cpp.s
+
+MainMenu/Randomizer.obj: MainMenu/Randomizer.cpp.obj
+
+.PHONY : MainMenu/Randomizer.obj
+
+# target to build an object file
+MainMenu/Randomizer.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDIZO_Project.dir\build.make CMakeFiles/SDIZO_Project.dir/MainMenu/Randomizer.cpp.obj
+.PHONY : MainMenu/Randomizer.cpp.obj
+
+MainMenu/Randomizer.i: MainMenu/Randomizer.cpp.i
+
+.PHONY : MainMenu/Randomizer.i
+
+# target to preprocess a source file
+MainMenu/Randomizer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDIZO_Project.dir\build.make CMakeFiles/SDIZO_Project.dir/MainMenu/Randomizer.cpp.i
+.PHONY : MainMenu/Randomizer.cpp.i
+
+MainMenu/Randomizer.s: MainMenu/Randomizer.cpp.s
+
+.PHONY : MainMenu/Randomizer.s
+
+# target to generate assembly for a file
+MainMenu/Randomizer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDIZO_Project.dir\build.make CMakeFiles/SDIZO_Project.dir/MainMenu/Randomizer.cpp.s
+.PHONY : MainMenu/Randomizer.cpp.s
+
 MainMenu/Reader.obj: MainMenu/Reader.cpp.obj
 
 .PHONY : MainMenu/Reader.obj
@@ -276,6 +330,33 @@ MainMenu/Reader.s: MainMenu/Reader.cpp.s
 MainMenu/Reader.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDIZO_Project.dir\build.make CMakeFiles/SDIZO_Project.dir/MainMenu/Reader.cpp.s
 .PHONY : MainMenu/Reader.cpp.s
+
+MainMenu/Timer.obj: MainMenu/Timer.cpp.obj
+
+.PHONY : MainMenu/Timer.obj
+
+# target to build an object file
+MainMenu/Timer.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDIZO_Project.dir\build.make CMakeFiles/SDIZO_Project.dir/MainMenu/Timer.cpp.obj
+.PHONY : MainMenu/Timer.cpp.obj
+
+MainMenu/Timer.i: MainMenu/Timer.cpp.i
+
+.PHONY : MainMenu/Timer.i
+
+# target to preprocess a source file
+MainMenu/Timer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDIZO_Project.dir\build.make CMakeFiles/SDIZO_Project.dir/MainMenu/Timer.cpp.i
+.PHONY : MainMenu/Timer.cpp.i
+
+MainMenu/Timer.s: MainMenu/Timer.cpp.s
+
+.PHONY : MainMenu/Timer.s
+
+# target to generate assembly for a file
+MainMenu/Timer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDIZO_Project.dir\build.make CMakeFiles/SDIZO_Project.dir/MainMenu/Timer.cpp.s
+.PHONY : MainMenu/Timer.cpp.s
 
 main.obj: main.cpp.obj
 
@@ -325,9 +406,18 @@ help:
 	@echo ... DLinkedList/Node.obj
 	@echo ... DLinkedList/Node.i
 	@echo ... DLinkedList/Node.s
+	@echo ... MainMenu/MainMenu.obj
+	@echo ... MainMenu/MainMenu.i
+	@echo ... MainMenu/MainMenu.s
+	@echo ... MainMenu/Randomizer.obj
+	@echo ... MainMenu/Randomizer.i
+	@echo ... MainMenu/Randomizer.s
 	@echo ... MainMenu/Reader.obj
 	@echo ... MainMenu/Reader.i
 	@echo ... MainMenu/Reader.s
+	@echo ... MainMenu/Timer.obj
+	@echo ... MainMenu/Timer.i
+	@echo ... MainMenu/Timer.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

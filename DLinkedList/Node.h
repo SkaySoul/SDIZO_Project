@@ -11,6 +11,8 @@ public:
         int value;
         Node * prev;
         Node * next;
+        Node(Node *prev,Node *next, int value);
+
 };
 
 
