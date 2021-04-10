@@ -104,28 +104,16 @@
 		<Unit filename="C:/Users/hellf/CLionProjects/SDIZO_Project/DLinkedList/Node.h">
 			<Option target="SDIZO_Project"/>
 		</Unit>
+		<Unit filename="C:/Users/hellf/CLionProjects/SDIZO_Project/MainMenu/IOShell.cpp">
+			<Option target="SDIZO_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/hellf/CLionProjects/SDIZO_Project/MainMenu/IOShell.h">
+			<Option target="SDIZO_Project"/>
+		</Unit>
 		<Unit filename="C:/Users/hellf/CLionProjects/SDIZO_Project/MainMenu/MainMenu.cpp">
 			<Option target="SDIZO_Project"/>
 		</Unit>
 		<Unit filename="C:/Users/hellf/CLionProjects/SDIZO_Project/MainMenu/MainMenu.h">
-			<Option target="SDIZO_Project"/>
-		</Unit>
-		<Unit filename="C:/Users/hellf/CLionProjects/SDIZO_Project/MainMenu/Randomizer.cpp">
-			<Option target="SDIZO_Project"/>
-		</Unit>
-		<Unit filename="C:/Users/hellf/CLionProjects/SDIZO_Project/MainMenu/Randomizer.h">
-			<Option target="SDIZO_Project"/>
-		</Unit>
-		<Unit filename="C:/Users/hellf/CLionProjects/SDIZO_Project/MainMenu/Reader.cpp">
-			<Option target="SDIZO_Project"/>
-		</Unit>
-		<Unit filename="C:/Users/hellf/CLionProjects/SDIZO_Project/MainMenu/Reader.h">
-			<Option target="SDIZO_Project"/>
-		</Unit>
-		<Unit filename="C:/Users/hellf/CLionProjects/SDIZO_Project/MainMenu/Timer.cpp">
-			<Option target="SDIZO_Project"/>
-		</Unit>
-		<Unit filename="C:/Users/hellf/CLionProjects/SDIZO_Project/MainMenu/Timer.h">
 			<Option target="SDIZO_Project"/>
 		</Unit>
 		<Unit filename="C:/Users/hellf/CLionProjects/SDIZO_Project/main.cpp">

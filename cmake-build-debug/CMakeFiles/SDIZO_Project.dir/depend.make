@@ -15,20 +15,20 @@ CMakeFiles/SDIZO_Project.dir/DLinkedList/DLinkedList.cpp.obj: ../DLinkedList/Nod
 CMakeFiles/SDIZO_Project.dir/DLinkedList/Node.cpp.obj: ../DLinkedList/Node.cpp
 CMakeFiles/SDIZO_Project.dir/DLinkedList/Node.cpp.obj: ../DLinkedList/Node.h
 
+CMakeFiles/SDIZO_Project.dir/MainMenu/IOShell.cpp.obj: ../MainMenu/IOShell.cpp
+CMakeFiles/SDIZO_Project.dir/MainMenu/IOShell.cpp.obj: ../MainMenu/IOShell.h
+
 CMakeFiles/SDIZO_Project.dir/MainMenu/MainMenu.cpp.obj: ../ArrayList/ArrayList.h
 CMakeFiles/SDIZO_Project.dir/MainMenu/MainMenu.cpp.obj: ../BinaryHeap/BinaryHeap.h
 CMakeFiles/SDIZO_Project.dir/MainMenu/MainMenu.cpp.obj: ../DLinkedList/DLinkedList.h
 CMakeFiles/SDIZO_Project.dir/MainMenu/MainMenu.cpp.obj: ../DLinkedList/Node.h
+CMakeFiles/SDIZO_Project.dir/MainMenu/MainMenu.cpp.obj: ../MainMenu/IOShell.h
 CMakeFiles/SDIZO_Project.dir/MainMenu/MainMenu.cpp.obj: ../MainMenu/MainMenu.cpp
 CMakeFiles/SDIZO_Project.dir/MainMenu/MainMenu.cpp.obj: ../MainMenu/MainMenu.h
-CMakeFiles/SDIZO_Project.dir/MainMenu/MainMenu.cpp.obj: ../MainMenu/Reader.h
-
-CMakeFiles/SDIZO_Project.dir/MainMenu/Reader.cpp.obj: ../MainMenu/Reader.cpp
-CMakeFiles/SDIZO_Project.dir/MainMenu/Reader.cpp.obj: ../MainMenu/Reader.h
 
 CMakeFiles/SDIZO_Project.dir/main.cpp.obj: ../ArrayList/ArrayList.h
+CMakeFiles/SDIZO_Project.dir/main.cpp.obj: ../MainMenu/IOShell.h
 CMakeFiles/SDIZO_Project.dir/main.cpp.obj: ../MainMenu/MainMenu.h
-CMakeFiles/SDIZO_Project.dir/main.cpp.obj: ../MainMenu/Reader.h
 CMakeFiles/SDIZO_Project.dir/main.cpp.obj: ../main.cpp
 CMakeFiles/SDIZO_Project.dir/main.cpp.obj: ../main.h
 

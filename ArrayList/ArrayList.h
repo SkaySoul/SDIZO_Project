@@ -22,12 +22,10 @@ private:
 
 public:
     void addElem(int elem);
-    void deleteElem(int elem);
-    unsigned long findElem(int elem);
+    void findElem(int elem);
     int getElem(unsigned long pos);
-    unsigned long getSize();
+    unsigned long getSize() const;
     bool isEmpty();
-
     ArrayList(unsigned long size, const int *array);
     explicit ArrayList(unsigned long size);
     ~ArrayList();

@@ -17,8 +17,18 @@ C:/Users/hellf/CLionProjects/SDIZO_Project/ArrayList/ArrayList.h
 C:/Users/hellf/CLionProjects/SDIZO_Project/DLinkedList/DLinkedList.h
 Node.h
 C:/Users/hellf/CLionProjects/SDIZO_Project/DLinkedList/Node.h
+iostream
+-
 
 C:/Users/hellf/CLionProjects/SDIZO_Project/DLinkedList/Node.h
+
+C:/Users/hellf/CLionProjects/SDIZO_Project/MainMenu/IOShell.h
+fstream
+-
+iostream
+-
+random
+-
 
 C:/Users/hellf/CLionProjects/SDIZO_Project/MainMenu/MainMenu.cpp
 MainMenu.h
@@ -33,14 +43,14 @@ utility
 -
 
 C:/Users/hellf/CLionProjects/SDIZO_Project/MainMenu/MainMenu.h
-Reader.h
-C:/Users/hellf/CLionProjects/SDIZO_Project/MainMenu/Reader.h
+IOShell.h
+C:/Users/hellf/CLionProjects/SDIZO_Project/MainMenu/IOShell.h
 ../ArrayList/ArrayList.h
 C:/Users/hellf/CLionProjects/SDIZO_Project/ArrayList/ArrayList.h
-
-C:/Users/hellf/CLionProjects/SDIZO_Project/MainMenu/Reader.h
-fstream
+windows.h
 -
 iostream
+-
+iomanip
 -
 

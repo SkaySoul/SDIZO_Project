@@ -11,17 +11,22 @@ using namespace std;
 
 
 MainMenu::MainMenu(){
-    this->path = initPath();
-    this->reader = new Reader(path);
+    this->reader = new IOShell();
 }
 void MainMenu::start() const{
     bool isWorking = true;
     while (isWorking){
-        cout<<"Insert number: "<<endl<<"1. Create Arraylist"<<endl<<"2. Create Doubly Linked List"<<endl<<"3. Create BinaryHeap"<<endl<<"4. Create Binary Search Tree"<<endl<<"5. Exit"<<endl;
+        cout<<"Insert number: "<<endl<<"0. Exit"<<endl<<"1. Create Arraylist"<<endl<<"2. Create Doubly Linked List"<<endl<<"3. Create BinaryHeap"<<endl<<"4. Create Binary Search Tree"<<endl;
         int num = 0;
         string str;
         cin>>num;
         switch(num) {
+
+            case 0: {
+                isWorking = false;
+                break;
+            }
+
             case 1: {
                 cout<<"Arraylist created"<<endl;
                 workWithArraylist();
@@ -45,11 +50,6 @@ void MainMenu::start() const{
                 break;
             }
 
-            case 5: {
-                isWorking = false;
-                break;
-            }
-
             default:{
                 cout<<"Incorrect number selected"<<endl;
                 break;
@@ -59,9 +59,8 @@ void MainMenu::start() const{
 
 }
 
-
 void MainMenu::workWithArraylist() const{
-    ArrayList *arrayList = new ArrayList(reader->arraySize, reader->arr);
+    auto *arrayList = new ArrayList(reader->arraySize, reader->arr);
     bool isWorking = true;
     while(isWorking) {
         showOperations();
@@ -76,8 +75,15 @@ void MainMenu::workWithArraylist() const{
                 int elem = chooser();
                 cout << "Write position: " << endl;
                 int pos = chooser();
+                long long int frequency, start, elapsed;
+                QueryPerformanceFrequency((LARGE_INTEGER *)&frequency);
+                start = read_QPC();
                 arrayList->addElem(elem, pos);
+                elapsed = read_QPC() - start;
                 cout << "Element added!" << endl;
+                cout << "Time [s] = " << fixed << setprecision(3) << (float)elapsed /frequency << endl;
+                cout << "Time [ms] = " << setprecision(0) << (1000.0 * elapsed) /frequency << endl;
+                cout << "Time [us] = " << setprecision(0) << (1000000.0 * elapsed) /frequency << endl << endl;
                 break;
 
             }
@@ -88,17 +94,29 @@ void MainMenu::workWithArraylist() const{
                     cout<<"Incorrect position, array is lower than your written number"<<endl;
                 }
                 else{
+                    long long int frequency, start, elapsed;
+                    QueryPerformanceFrequency((LARGE_INTEGER *)&frequency);
+                    start = read_QPC();
                     arrayList->deleteElemOnPos(pos+1);
+                    elapsed = read_QPC() - start;
+                    cout << "Time [s] = " << fixed << setprecision(3) << (float)elapsed /frequency << endl;
+                    cout << "Time [ms] = " << setprecision(0) << (1000.0 * elapsed) /frequency << endl;
+                    cout << "Time [us] = " << setprecision(0) << (1000000.0 * elapsed) /frequency << endl << endl;
+                    cout << "Element deleted!" << endl;
                 }
                 break;
             }
             case 3: {
                 cout << "Write an element: " << endl;
                 int elem = chooser();
-                unsigned long pos = arrayList->findElem(elem);
-                if(pos!=-1){
-                    cout<<"This element is on position: " << pos << endl;
-                }
+                long long int frequency, start, elapsed;
+                QueryPerformanceFrequency((LARGE_INTEGER *)&frequency);
+                start = read_QPC();
+                arrayList->findElem(elem);
+                elapsed = read_QPC() - start;
+                cout << "Time [s] = " << fixed << setprecision(3) << (float)elapsed /frequency << endl;
+                cout << "Time [ms] = " << setprecision(0) << (1000.0 * elapsed) /frequency << endl;
+                cout << "Time [us] = " << setprecision(0) << (1000000.0 * elapsed) /frequency << endl << endl;
                 break;
             }
             case 4: {
@@ -122,7 +140,7 @@ void MainMenu::workWithArraylist() const{
 
 
 void MainMenu::workWithDLinkedList() const{
-    DLinkedList *dLinkedList = new DLinkedList(reader->arraySize, reader->arr);
+    auto *dLinkedList = new DLinkedList(reader->arraySize, reader->arr);
     bool isWorking = true;
     while(isWorking) {
         showOperations();
@@ -137,24 +155,43 @@ void MainMenu::workWithDLinkedList() const{
                 int elem = chooser();
                 cout << "Write position: " << endl;
                 int pos = chooser();
+                long long int frequency, start, elapsed;
+                QueryPerformanceFrequency((LARGE_INTEGER *)&frequency);
+                start = read_QPC();
                 dLinkedList->addElem(pos, elem);
+                elapsed = read_QPC() - start;
                 cout << "Element added!" << endl;
+                cout << "Time [s] = " << fixed << setprecision(3) << (float)elapsed /frequency << endl;
+                cout << "Time [ms] = " << setprecision(0) << (1000.0 * elapsed) /frequency << endl;
+                cout << "Time [us] = " << setprecision(0) << (1000000.0 * elapsed) /frequency << endl << endl;
                 break;
 
             }
             case 2: {
                 cout << "Write an position: " << endl;
                 int pos = chooser();
+                long long int frequency, start, elapsed;
+                QueryPerformanceFrequency((LARGE_INTEGER *)&frequency);
+                start = read_QPC();
                 dLinkedList->deleteElemOnPos(pos);
+                elapsed = read_QPC() - start;
+                cout << "Time [s] = " << fixed << setprecision(3) << (float)elapsed /frequency << endl;
+                cout << "Time [ms] = " << setprecision(0) << (1000.0 * elapsed) /frequency << endl;
+                cout << "Time [us] = " << setprecision(0) << (1000000.0 * elapsed) /frequency << endl << endl;
+                cout << "Element deleted!" << endl;
                 break;
             }
             case 3: {
                 cout << "Write an element: " << endl;
                 int elem = chooser();
-                unsigned long pos = dLinkedList->findElem(elem);
-                if(pos!=-1){
-                    cout<<"This element is on position: " << pos << endl;
-                }
+                long long int frequency, start, elapsed;
+                QueryPerformanceFrequency((LARGE_INTEGER *)&frequency);
+                start = read_QPC();
+                dLinkedList->findElem(elem);
+                elapsed = read_QPC() - start;
+                cout << "Time [s] = " << fixed << setprecision(3) << (float)elapsed /frequency << endl;
+                cout << "Time [ms] = " << setprecision(0) << (1000.0 * elapsed) /frequency << endl;
+                cout << "Time [us] = " << setprecision(0) << (1000000.0 * elapsed) /frequency << endl << endl;
                 break;
             }
             case 4: {
@@ -172,7 +209,7 @@ void MainMenu::workWithDLinkedList() const{
 }
 
 void MainMenu::workWithBinaryHeap() const{
-    BinaryHeap *heap = new BinaryHeap(reader->arraySize, reader->arr);
+    auto *heap = new BinaryHeap(reader->arraySize, reader->arr);
     bool isWorking = true;
     while(isWorking) {
         cout<<"0. Exit to main menu"<<endl<<"1. Add element to structure"<<endl<<"2. Delete root of heap"<<endl<<"3. Find element on structure"<<endl<<"4. Show structure like array"<<endl;
@@ -185,24 +222,42 @@ void MainMenu::workWithBinaryHeap() const{
             case 1: {
                 cout << "Write an element: " << endl;
                 int elem = chooser();
+                long long int frequency, start, elapsed;
+                QueryPerformanceFrequency((LARGE_INTEGER *)&frequency);
+                start = read_QPC();
                 heap->addElem(elem);
                 cout << "Element added!" << endl;
+                elapsed = read_QPC() - start;
+                cout << "Time [s] = " << fixed << setprecision(3) << (float)elapsed /frequency << endl;
+                cout << "Time [ms] = " << setprecision(0) << (1000.0 * elapsed) /frequency << endl;
+                cout << "Time [us] = " << setprecision(0) << (1000000.0 * elapsed) /frequency << endl << endl;
                 break;
 
             }
             case 2: {
+                long long int frequency, start, elapsed;
+                QueryPerformanceFrequency((LARGE_INTEGER *)&frequency);
+                start = read_QPC();
                 heap->removeRoot();
+                cout << "Element added!" << endl;
+                elapsed = read_QPC() - start;
+                cout << "Time [s] = " << fixed << setprecision(3) << (float)elapsed /frequency << endl;
+                cout << "Time [ms] = " << setprecision(0) << (1000.0 * elapsed) /frequency << endl;
+                cout << "Time [us] = " << setprecision(0) << (1000000.0 * elapsed) /frequency << endl << endl;
+                cout << "Element deleted!" << endl;
                 break;
             }
             case 3: {
                 cout << "Write an element: " << endl;
                 int elem = chooser();
-                if(heap->findElem(0,elem)){
-                    cout<<"Element is founded"<< endl;
-                }
-                else{
-                    cout<<"Element is not founded"<< endl;
-                }
+                long long int frequency, start, elapsed;
+                QueryPerformanceFrequency((LARGE_INTEGER *)&frequency);
+                start = read_QPC();
+                heap->findElem(elem);
+                elapsed = read_QPC() - start;
+                cout << "Time [s] = " << fixed << setprecision(3) << (float)elapsed /frequency << endl;
+                cout << "Time [ms] = " << setprecision(0) << (1000.0 * elapsed) /frequency << endl;
+                cout << "Time [us] = " << setprecision(0) << (1000000.0 * elapsed) /frequency << endl << endl;
                 break;
             }
             case 4: {
@@ -227,7 +282,6 @@ void MainMenu::workWithBinaryHeap() const{
     }
 }
 
-
 void MainMenu::showOperations(){
         cout<<"Please choose an operation "<<endl;
         cout<<"0. Exit to main menu"<<endl;
@@ -243,14 +297,6 @@ int MainMenu::chooser(){
     return num;
 }
 
-
-string MainMenu::initPath(){
-    string temp;
-    cout<<"Please insert file path..."<<endl;
-    cin>>temp;
-    return temp;
-}
-
 long long int MainMenu::read_QPC()
 {
     LARGE_INTEGER count;
@@ -258,12 +304,3 @@ long long int MainMenu::read_QPC()
     return((long long int)count.QuadPart);
 }
 
-void MainMenu::showTime(){
-    long long int frequency, start, elapsed;
-    QueryPerformanceFrequency((LARGE_INTEGER *)&frequency);
-    start = read_QPC();
-    //some code
-    elapsed = read_QPC() - start;
-    cout << "Time [ms] = " << setprecision(0) << (1000 * elapsed)/frequency << endl;
-
-};

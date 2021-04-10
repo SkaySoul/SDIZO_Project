@@ -8,10 +8,8 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/hellf/CLionProjects/SDIZO_Project/BinaryHeap/BinaryHeap.cpp" "C:/Users/hellf/CLionProjects/SDIZO_Project/cmake-build-debug/CMakeFiles/SDIZO_Project.dir/BinaryHeap/BinaryHeap.cpp.obj"
   "C:/Users/hellf/CLionProjects/SDIZO_Project/DLinkedList/DLinkedList.cpp" "C:/Users/hellf/CLionProjects/SDIZO_Project/cmake-build-debug/CMakeFiles/SDIZO_Project.dir/DLinkedList/DLinkedList.cpp.obj"
   "C:/Users/hellf/CLionProjects/SDIZO_Project/DLinkedList/Node.cpp" "C:/Users/hellf/CLionProjects/SDIZO_Project/cmake-build-debug/CMakeFiles/SDIZO_Project.dir/DLinkedList/Node.cpp.obj"
+  "C:/Users/hellf/CLionProjects/SDIZO_Project/MainMenu/IOShell.cpp" "C:/Users/hellf/CLionProjects/SDIZO_Project/cmake-build-debug/CMakeFiles/SDIZO_Project.dir/MainMenu/IOShell.cpp.obj"
   "C:/Users/hellf/CLionProjects/SDIZO_Project/MainMenu/MainMenu.cpp" "C:/Users/hellf/CLionProjects/SDIZO_Project/cmake-build-debug/CMakeFiles/SDIZO_Project.dir/MainMenu/MainMenu.cpp.obj"
-  "C:/Users/hellf/CLionProjects/SDIZO_Project/MainMenu/Randomizer.cpp" "C:/Users/hellf/CLionProjects/SDIZO_Project/cmake-build-debug/CMakeFiles/SDIZO_Project.dir/MainMenu/Randomizer.cpp.obj"
-  "C:/Users/hellf/CLionProjects/SDIZO_Project/MainMenu/Reader.cpp" "C:/Users/hellf/CLionProjects/SDIZO_Project/cmake-build-debug/CMakeFiles/SDIZO_Project.dir/MainMenu/Reader.cpp.obj"
-  "C:/Users/hellf/CLionProjects/SDIZO_Project/MainMenu/Timer.cpp" "C:/Users/hellf/CLionProjects/SDIZO_Project/cmake-build-debug/CMakeFiles/SDIZO_Project.dir/MainMenu/Timer.cpp.obj"
   "C:/Users/hellf/CLionProjects/SDIZO_Project/main.cpp" "C:/Users/hellf/CLionProjects/SDIZO_Project/cmake-build-debug/CMakeFiles/SDIZO_Project.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

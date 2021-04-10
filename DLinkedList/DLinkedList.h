@@ -7,6 +7,8 @@
 
 
 #include "Node.h"
+#include <iostream>
+using namespace std;
 
 class DLinkedList {
 private:
@@ -24,20 +26,15 @@ private:
 
 
 public:
-    unsigned long getSize();
-    unsigned long findElem(int elem);
-    int getElem(unsigned long pos);
-    bool isEmpty();
-    void deleteElem(int elem);
-
+    unsigned long getSize() const;
+    void findElem(int elem);
+//  int getElem(unsigned long pos);
+    bool isEmpty() const;
     DLinkedList();
     DLinkedList(unsigned long arrSize, int *arr);
     ~DLinkedList();
-
     void addElem(unsigned long pos, int elem);
     void deleteElemOnPos(unsigned long pos);
-
-
     void show();
 };
 

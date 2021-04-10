@@ -4,10 +4,6 @@
 #include "BinaryHeap.h"
 #include <iostream>
 
-BinaryHeap::BinaryHeap(unsigned long size) {
-    this->arraylist = new ArrayList(size);
-    this->size = arraylist->getSize();
-}
 
 BinaryHeap::BinaryHeap(unsigned long arrSize, int *arr){
     this->arraylist = new ArrayList(0);
@@ -58,12 +54,11 @@ int temp;
     }
 }
 
-unsigned long BinaryHeap::getSize() {
+unsigned long BinaryHeap::getSize() const {
     return this->size;
 }
 
 bool BinaryHeap::findElem(unsigned long startPos, int elem) {
-
     unsigned long lch = 2*startPos+1;
     unsigned long rch = 2*startPos+1;
     if(arraylist->getElem(startPos) == elem){
@@ -94,7 +89,12 @@ void BinaryHeap::removeRoot() {
 }
 
 
-
+void BinaryHeap::findElem(int elem){
+    if (findElem(0,elem)){
+        cout<<"Element founded!"<<endl;
+    }
+    else cout<<"Element not founded!";
+}
 
 
 

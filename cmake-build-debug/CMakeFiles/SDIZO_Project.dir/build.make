@@ -141,18 +141,18 @@ CMakeFiles/SDIZO_Project.dir/BinaryHeap/BinaryHeap.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SDIZO_Project.dir/BinaryHeap/BinaryHeap.cpp.s"
 	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\hellf\CLionProjects\SDIZO_Project\BinaryHeap\BinaryHeap.cpp -o CMakeFiles\SDIZO_Project.dir\BinaryHeap\BinaryHeap.cpp.s
 
-CMakeFiles/SDIZO_Project.dir/MainMenu/Reader.cpp.obj: CMakeFiles/SDIZO_Project.dir/flags.make
-CMakeFiles/SDIZO_Project.dir/MainMenu/Reader.cpp.obj: ../MainMenu/Reader.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\hellf\CLionProjects\SDIZO_Project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/SDIZO_Project.dir/MainMenu/Reader.cpp.obj"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SDIZO_Project.dir\MainMenu\Reader.cpp.obj -c C:\Users\hellf\CLionProjects\SDIZO_Project\MainMenu\Reader.cpp
+CMakeFiles/SDIZO_Project.dir/MainMenu/IOShell.cpp.obj: CMakeFiles/SDIZO_Project.dir/flags.make
+CMakeFiles/SDIZO_Project.dir/MainMenu/IOShell.cpp.obj: ../MainMenu/IOShell.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\hellf\CLionProjects\SDIZO_Project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/SDIZO_Project.dir/MainMenu/IOShell.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SDIZO_Project.dir\MainMenu\IOShell.cpp.obj -c C:\Users\hellf\CLionProjects\SDIZO_Project\MainMenu\IOShell.cpp
 
-CMakeFiles/SDIZO_Project.dir/MainMenu/Reader.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SDIZO_Project.dir/MainMenu/Reader.cpp.i"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\hellf\CLionProjects\SDIZO_Project\MainMenu\Reader.cpp > CMakeFiles\SDIZO_Project.dir\MainMenu\Reader.cpp.i
+CMakeFiles/SDIZO_Project.dir/MainMenu/IOShell.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SDIZO_Project.dir/MainMenu/IOShell.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\hellf\CLionProjects\SDIZO_Project\MainMenu\IOShell.cpp > CMakeFiles\SDIZO_Project.dir\MainMenu\IOShell.cpp.i
 
-CMakeFiles/SDIZO_Project.dir/MainMenu/Reader.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SDIZO_Project.dir/MainMenu/Reader.cpp.s"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\hellf\CLionProjects\SDIZO_Project\MainMenu\Reader.cpp -o CMakeFiles\SDIZO_Project.dir\MainMenu\Reader.cpp.s
+CMakeFiles/SDIZO_Project.dir/MainMenu/IOShell.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SDIZO_Project.dir/MainMenu/IOShell.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\hellf\CLionProjects\SDIZO_Project\MainMenu\IOShell.cpp -o CMakeFiles\SDIZO_Project.dir\MainMenu\IOShell.cpp.s
 
 CMakeFiles/SDIZO_Project.dir/MainMenu/MainMenu.cpp.obj: CMakeFiles/SDIZO_Project.dir/flags.make
 CMakeFiles/SDIZO_Project.dir/MainMenu/MainMenu.cpp.obj: ../MainMenu/MainMenu.cpp
@@ -167,32 +167,6 @@ CMakeFiles/SDIZO_Project.dir/MainMenu/MainMenu.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SDIZO_Project.dir/MainMenu/MainMenu.cpp.s"
 	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\hellf\CLionProjects\SDIZO_Project\MainMenu\MainMenu.cpp -o CMakeFiles\SDIZO_Project.dir\MainMenu\MainMenu.cpp.s
 
-CMakeFiles/SDIZO_Project.dir/MainMenu/Randomizer.cpp.obj: CMakeFiles/SDIZO_Project.dir/flags.make
-CMakeFiles/SDIZO_Project.dir/MainMenu/Randomizer.cpp.obj: ../MainMenu/Randomizer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\hellf\CLionProjects\SDIZO_Project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/SDIZO_Project.dir/MainMenu/Randomizer.cpp.obj"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SDIZO_Project.dir\MainMenu\Randomizer.cpp.obj -c C:\Users\hellf\CLionProjects\SDIZO_Project\MainMenu\Randomizer.cpp
-
-CMakeFiles/SDIZO_Project.dir/MainMenu/Randomizer.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SDIZO_Project.dir/MainMenu/Randomizer.cpp.i"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\hellf\CLionProjects\SDIZO_Project\MainMenu\Randomizer.cpp > CMakeFiles\SDIZO_Project.dir\MainMenu\Randomizer.cpp.i
-
-CMakeFiles/SDIZO_Project.dir/MainMenu/Randomizer.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SDIZO_Project.dir/MainMenu/Randomizer.cpp.s"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\hellf\CLionProjects\SDIZO_Project\MainMenu\Randomizer.cpp -o CMakeFiles\SDIZO_Project.dir\MainMenu\Randomizer.cpp.s
-
-CMakeFiles/SDIZO_Project.dir/MainMenu/Timer.cpp.obj: CMakeFiles/SDIZO_Project.dir/flags.make
-CMakeFiles/SDIZO_Project.dir/MainMenu/Timer.cpp.obj: ../MainMenu/Timer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\hellf\CLionProjects\SDIZO_Project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/SDIZO_Project.dir/MainMenu/Timer.cpp.obj"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SDIZO_Project.dir\MainMenu\Timer.cpp.obj -c C:\Users\hellf\CLionProjects\SDIZO_Project\MainMenu\Timer.cpp
-
-CMakeFiles/SDIZO_Project.dir/MainMenu/Timer.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SDIZO_Project.dir/MainMenu/Timer.cpp.i"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\hellf\CLionProjects\SDIZO_Project\MainMenu\Timer.cpp > CMakeFiles\SDIZO_Project.dir\MainMenu\Timer.cpp.i
-
-CMakeFiles/SDIZO_Project.dir/MainMenu/Timer.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SDIZO_Project.dir/MainMenu/Timer.cpp.s"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\hellf\CLionProjects\SDIZO_Project\MainMenu\Timer.cpp -o CMakeFiles\SDIZO_Project.dir\MainMenu\Timer.cpp.s
-
 # Object files for target SDIZO_Project
 SDIZO_Project_OBJECTS = \
 "CMakeFiles/SDIZO_Project.dir/ArrayList/ArrayList.cpp.obj" \
@@ -200,10 +174,8 @@ SDIZO_Project_OBJECTS = \
 "CMakeFiles/SDIZO_Project.dir/DLinkedList/DLinkedList.cpp.obj" \
 "CMakeFiles/SDIZO_Project.dir/DLinkedList/Node.cpp.obj" \
 "CMakeFiles/SDIZO_Project.dir/BinaryHeap/BinaryHeap.cpp.obj" \
-"CMakeFiles/SDIZO_Project.dir/MainMenu/Reader.cpp.obj" \
-"CMakeFiles/SDIZO_Project.dir/MainMenu/MainMenu.cpp.obj" \
-"CMakeFiles/SDIZO_Project.dir/MainMenu/Randomizer.cpp.obj" \
-"CMakeFiles/SDIZO_Project.dir/MainMenu/Timer.cpp.obj"
+"CMakeFiles/SDIZO_Project.dir/MainMenu/IOShell.cpp.obj" \
+"CMakeFiles/SDIZO_Project.dir/MainMenu/MainMenu.cpp.obj"
 
 # External object files for target SDIZO_Project
 SDIZO_Project_EXTERNAL_OBJECTS =
@@ -213,15 +185,13 @@ SDIZO_Project.exe: CMakeFiles/SDIZO_Project.dir/main.cpp.obj
 SDIZO_Project.exe: CMakeFiles/SDIZO_Project.dir/DLinkedList/DLinkedList.cpp.obj
 SDIZO_Project.exe: CMakeFiles/SDIZO_Project.dir/DLinkedList/Node.cpp.obj
 SDIZO_Project.exe: CMakeFiles/SDIZO_Project.dir/BinaryHeap/BinaryHeap.cpp.obj
-SDIZO_Project.exe: CMakeFiles/SDIZO_Project.dir/MainMenu/Reader.cpp.obj
+SDIZO_Project.exe: CMakeFiles/SDIZO_Project.dir/MainMenu/IOShell.cpp.obj
 SDIZO_Project.exe: CMakeFiles/SDIZO_Project.dir/MainMenu/MainMenu.cpp.obj
-SDIZO_Project.exe: CMakeFiles/SDIZO_Project.dir/MainMenu/Randomizer.cpp.obj
-SDIZO_Project.exe: CMakeFiles/SDIZO_Project.dir/MainMenu/Timer.cpp.obj
 SDIZO_Project.exe: CMakeFiles/SDIZO_Project.dir/build.make
 SDIZO_Project.exe: CMakeFiles/SDIZO_Project.dir/linklibs.rsp
 SDIZO_Project.exe: CMakeFiles/SDIZO_Project.dir/objects1.rsp
 SDIZO_Project.exe: CMakeFiles/SDIZO_Project.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\hellf\CLionProjects\SDIZO_Project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable SDIZO_Project.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\hellf\CLionProjects\SDIZO_Project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable SDIZO_Project.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\SDIZO_Project.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

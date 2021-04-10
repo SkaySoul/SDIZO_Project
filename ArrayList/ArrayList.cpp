@@ -80,30 +80,25 @@ int ArrayList::getElem(unsigned long pos){
     return arr[pos];
 }
 
-unsigned long ArrayList::findElem(int elem) {
-    unsigned long temp;
-    bool is_found = false;
+void ArrayList::findElem(int elem) {
     for(unsigned long i = 0;i<size-1;i++){
         if(elem == arr[i]){
-            temp = i;
-            is_found = true;
+            cout<<"Element is on this position: "<<arr[i]<<endl;
             break;
         }
+        if(i == size-2){
+            cout<<"Element is not founded"<<endl;
+        }
     }
-    if(!is_found){
-        std::cout<<"Element is not founded"<<std::endl;
-        return -1;
-    }
-    return temp;
 }
 
 void ArrayList::setElem(int elem, unsigned long pos) {
     arr[pos] = elem;
 }
 
-unsigned long ArrayList::getSize(){
+unsigned long ArrayList::getSize() const{
     return size;
-};
+}
 
 void ArrayList::deleteFromFirstPos() {
     delete &arr[0];
@@ -138,10 +133,7 @@ void ArrayList::deleteFromLastPos() {
     arr = temp_ptr;
 }
 
-void ArrayList::deleteElem(int elem) {
-    unsigned long pos = findElem(elem);
-    deleteElemOnPos(pos);
-}
+
 
 void ArrayList::deleteElemOnPos(unsigned long pos) {
     if(pos == 0){
@@ -155,7 +147,7 @@ void ArrayList::deleteElemOnPos(unsigned long pos) {
     }
 }
 
-bool ArrayList::isEmpty() {
+[[maybe_unused]] bool ArrayList::isEmpty() {
     for (int i = 0;i<size-1;i++){
         if (arr[i] != 0){
             return true;
