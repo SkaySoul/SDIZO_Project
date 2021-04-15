@@ -167,6 +167,32 @@ CMakeFiles/SDIZO_Project.dir/MainMenu/MainMenu.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SDIZO_Project.dir/MainMenu/MainMenu.cpp.s"
 	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\hellf\CLionProjects\SDIZO_Project\MainMenu\MainMenu.cpp -o CMakeFiles\SDIZO_Project.dir\MainMenu\MainMenu.cpp.s
 
+CMakeFiles/SDIZO_Project.dir/BinarySearchTree/BinarySearchTree.cpp.obj: CMakeFiles/SDIZO_Project.dir/flags.make
+CMakeFiles/SDIZO_Project.dir/BinarySearchTree/BinarySearchTree.cpp.obj: ../BinarySearchTree/BinarySearchTree.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\hellf\CLionProjects\SDIZO_Project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/SDIZO_Project.dir/BinarySearchTree/BinarySearchTree.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SDIZO_Project.dir\BinarySearchTree\BinarySearchTree.cpp.obj -c C:\Users\hellf\CLionProjects\SDIZO_Project\BinarySearchTree\BinarySearchTree.cpp
+
+CMakeFiles/SDIZO_Project.dir/BinarySearchTree/BinarySearchTree.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SDIZO_Project.dir/BinarySearchTree/BinarySearchTree.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\hellf\CLionProjects\SDIZO_Project\BinarySearchTree\BinarySearchTree.cpp > CMakeFiles\SDIZO_Project.dir\BinarySearchTree\BinarySearchTree.cpp.i
+
+CMakeFiles/SDIZO_Project.dir/BinarySearchTree/BinarySearchTree.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SDIZO_Project.dir/BinarySearchTree/BinarySearchTree.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\hellf\CLionProjects\SDIZO_Project\BinarySearchTree\BinarySearchTree.cpp -o CMakeFiles\SDIZO_Project.dir\BinarySearchTree\BinarySearchTree.cpp.s
+
+CMakeFiles/SDIZO_Project.dir/BinarySearchTree/Node.cpp.obj: CMakeFiles/SDIZO_Project.dir/flags.make
+CMakeFiles/SDIZO_Project.dir/BinarySearchTree/Node.cpp.obj: ../BinarySearchTree/Node.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\hellf\CLionProjects\SDIZO_Project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/SDIZO_Project.dir/BinarySearchTree/Node.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SDIZO_Project.dir\BinarySearchTree\Node.cpp.obj -c C:\Users\hellf\CLionProjects\SDIZO_Project\BinarySearchTree\Node.cpp
+
+CMakeFiles/SDIZO_Project.dir/BinarySearchTree/Node.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SDIZO_Project.dir/BinarySearchTree/Node.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\hellf\CLionProjects\SDIZO_Project\BinarySearchTree\Node.cpp > CMakeFiles\SDIZO_Project.dir\BinarySearchTree\Node.cpp.i
+
+CMakeFiles/SDIZO_Project.dir/BinarySearchTree/Node.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SDIZO_Project.dir/BinarySearchTree/Node.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\hellf\CLionProjects\SDIZO_Project\BinarySearchTree\Node.cpp -o CMakeFiles\SDIZO_Project.dir\BinarySearchTree\Node.cpp.s
+
 # Object files for target SDIZO_Project
 SDIZO_Project_OBJECTS = \
 "CMakeFiles/SDIZO_Project.dir/ArrayList/ArrayList.cpp.obj" \
@@ -175,7 +201,9 @@ SDIZO_Project_OBJECTS = \
 "CMakeFiles/SDIZO_Project.dir/DLinkedList/Node.cpp.obj" \
 "CMakeFiles/SDIZO_Project.dir/BinaryHeap/BinaryHeap.cpp.obj" \
 "CMakeFiles/SDIZO_Project.dir/MainMenu/IOShell.cpp.obj" \
-"CMakeFiles/SDIZO_Project.dir/MainMenu/MainMenu.cpp.obj"
+"CMakeFiles/SDIZO_Project.dir/MainMenu/MainMenu.cpp.obj" \
+"CMakeFiles/SDIZO_Project.dir/BinarySearchTree/BinarySearchTree.cpp.obj" \
+"CMakeFiles/SDIZO_Project.dir/BinarySearchTree/Node.cpp.obj"
 
 # External object files for target SDIZO_Project
 SDIZO_Project_EXTERNAL_OBJECTS =
@@ -187,11 +215,13 @@ SDIZO_Project.exe: CMakeFiles/SDIZO_Project.dir/DLinkedList/Node.cpp.obj
 SDIZO_Project.exe: CMakeFiles/SDIZO_Project.dir/BinaryHeap/BinaryHeap.cpp.obj
 SDIZO_Project.exe: CMakeFiles/SDIZO_Project.dir/MainMenu/IOShell.cpp.obj
 SDIZO_Project.exe: CMakeFiles/SDIZO_Project.dir/MainMenu/MainMenu.cpp.obj
+SDIZO_Project.exe: CMakeFiles/SDIZO_Project.dir/BinarySearchTree/BinarySearchTree.cpp.obj
+SDIZO_Project.exe: CMakeFiles/SDIZO_Project.dir/BinarySearchTree/Node.cpp.obj
 SDIZO_Project.exe: CMakeFiles/SDIZO_Project.dir/build.make
 SDIZO_Project.exe: CMakeFiles/SDIZO_Project.dir/linklibs.rsp
 SDIZO_Project.exe: CMakeFiles/SDIZO_Project.dir/objects1.rsp
 SDIZO_Project.exe: CMakeFiles/SDIZO_Project.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\hellf\CLionProjects\SDIZO_Project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable SDIZO_Project.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\hellf\CLionProjects\SDIZO_Project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable SDIZO_Project.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\SDIZO_Project.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

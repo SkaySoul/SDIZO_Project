@@ -8,6 +8,13 @@ CMakeFiles/SDIZO_Project.dir/BinaryHeap/BinaryHeap.cpp.obj: ../ArrayList/ArrayLi
 CMakeFiles/SDIZO_Project.dir/BinaryHeap/BinaryHeap.cpp.obj: ../BinaryHeap/BinaryHeap.cpp
 CMakeFiles/SDIZO_Project.dir/BinaryHeap/BinaryHeap.cpp.obj: ../BinaryHeap/BinaryHeap.h
 
+CMakeFiles/SDIZO_Project.dir/BinarySearchTree/BinarySearchTree.cpp.obj: ../BinarySearchTree/BinarySearchTree.cpp
+CMakeFiles/SDIZO_Project.dir/BinarySearchTree/BinarySearchTree.cpp.obj: ../BinarySearchTree/BinarySearchTree.h
+CMakeFiles/SDIZO_Project.dir/BinarySearchTree/BinarySearchTree.cpp.obj: ../BinarySearchTree/Node.h
+
+CMakeFiles/SDIZO_Project.dir/BinarySearchTree/Node.cpp.obj: ../BinarySearchTree/Node.cpp
+CMakeFiles/SDIZO_Project.dir/BinarySearchTree/Node.cpp.obj: ../BinarySearchTree/Node.h
+
 CMakeFiles/SDIZO_Project.dir/DLinkedList/DLinkedList.cpp.obj: ../DLinkedList/DLinkedList.cpp
 CMakeFiles/SDIZO_Project.dir/DLinkedList/DLinkedList.cpp.obj: ../DLinkedList/DLinkedList.h
 CMakeFiles/SDIZO_Project.dir/DLinkedList/DLinkedList.cpp.obj: ../DLinkedList/Node.h

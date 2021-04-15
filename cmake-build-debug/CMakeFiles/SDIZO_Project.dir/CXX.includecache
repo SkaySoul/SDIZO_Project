@@ -6,13 +6,27 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/hellf/CLionProjects/SDIZO_Project/ArrayList/ArrayList.h
-fstream
+C:/Users/hellf/CLionProjects/SDIZO_Project/BinarySearchTree/BinarySearchTree.cpp
+BinarySearchTree.h
+C:/Users/hellf/CLionProjects/SDIZO_Project/BinarySearchTree/BinarySearchTree.h
+
+C:/Users/hellf/CLionProjects/SDIZO_Project/BinarySearchTree/BinarySearchTree.h
+Node.h
+C:/Users/hellf/CLionProjects/SDIZO_Project/BinarySearchTree/Node.h
+iostream
 -
 
-C:/Users/hellf/CLionProjects/SDIZO_Project/BinaryHeap/BinaryHeap.h
-../ArrayList/ArrayList.h
-C:/Users/hellf/CLionProjects/SDIZO_Project/ArrayList/ArrayList.h
+C:/Users/hellf/CLionProjects/SDIZO_Project/BinarySearchTree/Node.cpp
+Node.h
+C:/Users/hellf/CLionProjects/SDIZO_Project/BinarySearchTree/Node.h
+
+C:/Users/hellf/CLionProjects/SDIZO_Project/BinarySearchTree/Node.h
+
+C:/Users/hellf/CLionProjects/SDIZO_Project/DLinkedList/DLinkedList.cpp
+DLinkedList.h
+C:/Users/hellf/CLionProjects/SDIZO_Project/DLinkedList/DLinkedList.h
+iostream
+-
 
 C:/Users/hellf/CLionProjects/SDIZO_Project/DLinkedList/DLinkedList.h
 Node.h
@@ -21,36 +35,4 @@ iostream
 -
 
 C:/Users/hellf/CLionProjects/SDIZO_Project/DLinkedList/Node.h
-
-C:/Users/hellf/CLionProjects/SDIZO_Project/MainMenu/IOShell.h
-fstream
--
-iostream
--
-random
--
-
-C:/Users/hellf/CLionProjects/SDIZO_Project/MainMenu/MainMenu.cpp
-MainMenu.h
-C:/Users/hellf/CLionProjects/SDIZO_Project/MainMenu/MainMenu.h
-../DLinkedList/DLinkedList.h
-C:/Users/hellf/CLionProjects/SDIZO_Project/DLinkedList/DLinkedList.h
-../BinaryHeap/BinaryHeap.h
-C:/Users/hellf/CLionProjects/SDIZO_Project/BinaryHeap/BinaryHeap.h
-iostream
--
-utility
--
-
-C:/Users/hellf/CLionProjects/SDIZO_Project/MainMenu/MainMenu.h
-IOShell.h
-C:/Users/hellf/CLionProjects/SDIZO_Project/MainMenu/IOShell.h
-../ArrayList/ArrayList.h
-C:/Users/hellf/CLionProjects/SDIZO_Project/ArrayList/ArrayList.h
-windows.h
--
-iostream
--
-iomanip
--
 

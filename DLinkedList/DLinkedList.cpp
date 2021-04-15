@@ -15,7 +15,6 @@ DLinkedList::DLinkedList(unsigned long arrSize, int *arr) {
     this->head = this->tail = nullptr;
     for (int i = 0; i<arrSize; i++){
         if (i == 0){
-
         }
         pushBack(arr[i]);
     }

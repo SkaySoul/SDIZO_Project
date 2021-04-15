@@ -92,6 +92,18 @@
 		<Unit filename="C:/Users/hellf/CLionProjects/SDIZO_Project/BinaryHeap/BinaryHeap.h">
 			<Option target="SDIZO_Project"/>
 		</Unit>
+		<Unit filename="C:/Users/hellf/CLionProjects/SDIZO_Project/BinarySearchTree/BinarySearchTree.cpp">
+			<Option target="SDIZO_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/hellf/CLionProjects/SDIZO_Project/BinarySearchTree/BinarySearchTree.h">
+			<Option target="SDIZO_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/hellf/CLionProjects/SDIZO_Project/BinarySearchTree/Node.cpp">
+			<Option target="SDIZO_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/hellf/CLionProjects/SDIZO_Project/BinarySearchTree/Node.h">
+			<Option target="SDIZO_Project"/>
+		</Unit>
 		<Unit filename="C:/Users/hellf/CLionProjects/SDIZO_Project/DLinkedList/DLinkedList.cpp">
 			<Option target="SDIZO_Project"/>
 		</Unit>

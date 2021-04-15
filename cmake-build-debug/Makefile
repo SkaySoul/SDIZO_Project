@@ -196,6 +196,60 @@ BinaryHeap/BinaryHeap.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDIZO_Project.dir\build.make CMakeFiles/SDIZO_Project.dir/BinaryHeap/BinaryHeap.cpp.s
 .PHONY : BinaryHeap/BinaryHeap.cpp.s
 
+BinarySearchTree/BinarySearchTree.obj: BinarySearchTree/BinarySearchTree.cpp.obj
+
+.PHONY : BinarySearchTree/BinarySearchTree.obj
+
+# target to build an object file
+BinarySearchTree/BinarySearchTree.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDIZO_Project.dir\build.make CMakeFiles/SDIZO_Project.dir/BinarySearchTree/BinarySearchTree.cpp.obj
+.PHONY : BinarySearchTree/BinarySearchTree.cpp.obj
+
+BinarySearchTree/BinarySearchTree.i: BinarySearchTree/BinarySearchTree.cpp.i
+
+.PHONY : BinarySearchTree/BinarySearchTree.i
+
+# target to preprocess a source file
+BinarySearchTree/BinarySearchTree.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDIZO_Project.dir\build.make CMakeFiles/SDIZO_Project.dir/BinarySearchTree/BinarySearchTree.cpp.i
+.PHONY : BinarySearchTree/BinarySearchTree.cpp.i
+
+BinarySearchTree/BinarySearchTree.s: BinarySearchTree/BinarySearchTree.cpp.s
+
+.PHONY : BinarySearchTree/BinarySearchTree.s
+
+# target to generate assembly for a file
+BinarySearchTree/BinarySearchTree.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDIZO_Project.dir\build.make CMakeFiles/SDIZO_Project.dir/BinarySearchTree/BinarySearchTree.cpp.s
+.PHONY : BinarySearchTree/BinarySearchTree.cpp.s
+
+BinarySearchTree/Node.obj: BinarySearchTree/Node.cpp.obj
+
+.PHONY : BinarySearchTree/Node.obj
+
+# target to build an object file
+BinarySearchTree/Node.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDIZO_Project.dir\build.make CMakeFiles/SDIZO_Project.dir/BinarySearchTree/Node.cpp.obj
+.PHONY : BinarySearchTree/Node.cpp.obj
+
+BinarySearchTree/Node.i: BinarySearchTree/Node.cpp.i
+
+.PHONY : BinarySearchTree/Node.i
+
+# target to preprocess a source file
+BinarySearchTree/Node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDIZO_Project.dir\build.make CMakeFiles/SDIZO_Project.dir/BinarySearchTree/Node.cpp.i
+.PHONY : BinarySearchTree/Node.cpp.i
+
+BinarySearchTree/Node.s: BinarySearchTree/Node.cpp.s
+
+.PHONY : BinarySearchTree/Node.s
+
+# target to generate assembly for a file
+BinarySearchTree/Node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDIZO_Project.dir\build.make CMakeFiles/SDIZO_Project.dir/BinarySearchTree/Node.cpp.s
+.PHONY : BinarySearchTree/Node.cpp.s
+
 DLinkedList/DLinkedList.obj: DLinkedList/DLinkedList.cpp.obj
 
 .PHONY : DLinkedList/DLinkedList.obj
@@ -346,6 +400,12 @@ help:
 	@echo ... BinaryHeap/BinaryHeap.obj
 	@echo ... BinaryHeap/BinaryHeap.i
 	@echo ... BinaryHeap/BinaryHeap.s
+	@echo ... BinarySearchTree/BinarySearchTree.obj
+	@echo ... BinarySearchTree/BinarySearchTree.i
+	@echo ... BinarySearchTree/BinarySearchTree.s
+	@echo ... BinarySearchTree/Node.obj
+	@echo ... BinarySearchTree/Node.i
+	@echo ... BinarySearchTree/Node.s
 	@echo ... DLinkedList/DLinkedList.obj
 	@echo ... DLinkedList/DLinkedList.i
 	@echo ... DLinkedList/DLinkedList.s

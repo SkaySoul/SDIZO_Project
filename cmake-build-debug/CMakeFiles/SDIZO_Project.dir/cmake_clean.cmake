@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/SDIZO_Project.dir/ArrayList/ArrayList.cpp.obj"
   "CMakeFiles/SDIZO_Project.dir/BinaryHeap/BinaryHeap.cpp.obj"
+  "CMakeFiles/SDIZO_Project.dir/BinarySearchTree/BinarySearchTree.cpp.obj"
+  "CMakeFiles/SDIZO_Project.dir/BinarySearchTree/Node.cpp.obj"
   "CMakeFiles/SDIZO_Project.dir/DLinkedList/DLinkedList.cpp.obj"
   "CMakeFiles/SDIZO_Project.dir/DLinkedList/Node.cpp.obj"
   "CMakeFiles/SDIZO_Project.dir/MainMenu/IOShell.cpp.obj"
