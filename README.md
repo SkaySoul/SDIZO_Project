@@ -3,7 +3,7 @@
 1️⃣ ArrayList  
 2️⃣ Doubly Linked List  
 3️⃣ Binary Heap  
-4️⃣ Binary Search Tree(In develop process)  
+4️⃣ Binary Search Tree 
 
 ### Available functions
 - creating structure from default array
