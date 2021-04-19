@@ -27,6 +27,7 @@ CMakeFiles/SDIZO_Project.dir/MainMenu/IOShell.cpp.obj: ../MainMenu/IOShell.h
 
 CMakeFiles/SDIZO_Project.dir/MainMenu/MainMenu.cpp.obj: ../ArrayList/ArrayList.h
 CMakeFiles/SDIZO_Project.dir/MainMenu/MainMenu.cpp.obj: ../BinaryHeap/BinaryHeap.h
+CMakeFiles/SDIZO_Project.dir/MainMenu/MainMenu.cpp.obj: ../BinarySearchTree/BinarySearchTree.h
 CMakeFiles/SDIZO_Project.dir/MainMenu/MainMenu.cpp.obj: ../DLinkedList/DLinkedList.h
 CMakeFiles/SDIZO_Project.dir/MainMenu/MainMenu.cpp.obj: ../DLinkedList/Node.h
 CMakeFiles/SDIZO_Project.dir/MainMenu/MainMenu.cpp.obj: ../MainMenu/IOShell.h
@@ -34,8 +35,11 @@ CMakeFiles/SDIZO_Project.dir/MainMenu/MainMenu.cpp.obj: ../MainMenu/MainMenu.cpp
 CMakeFiles/SDIZO_Project.dir/MainMenu/MainMenu.cpp.obj: ../MainMenu/MainMenu.h
 
 CMakeFiles/SDIZO_Project.dir/main.cpp.obj: ../ArrayList/ArrayList.h
+CMakeFiles/SDIZO_Project.dir/main.cpp.obj: ../BinaryHeap/BinaryHeap.h
+CMakeFiles/SDIZO_Project.dir/main.cpp.obj: ../BinarySearchTree/BinarySearchTree.h
+CMakeFiles/SDIZO_Project.dir/main.cpp.obj: ../DLinkedList/DLinkedList.h
+CMakeFiles/SDIZO_Project.dir/main.cpp.obj: ../DLinkedList/Node.h
 CMakeFiles/SDIZO_Project.dir/main.cpp.obj: ../MainMenu/IOShell.h
 CMakeFiles/SDIZO_Project.dir/main.cpp.obj: ../MainMenu/MainMenu.h
 CMakeFiles/SDIZO_Project.dir/main.cpp.obj: ../main.cpp
-CMakeFiles/SDIZO_Project.dir/main.cpp.obj: ../main.h
 

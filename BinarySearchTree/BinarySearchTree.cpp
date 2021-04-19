@@ -8,14 +8,14 @@
 BinarySearchTree::BinarySearchTree(unsigned long size, int *arr) {
     this->size = 0;
     this->root =nullptr;
-    for(int i = 0; i<size-1; i++){
+    for(int i = 0; i<size; i++){
         addElem(arr[i]);
     }
 }
 
 BinarySearchTree::~BinarySearchTree(){
     for(unsigned long i = 0; i< size-1; i--){
-        deleteElem(i);
+        deleter(root);
     }
 }
 
@@ -37,11 +37,13 @@ void BinarySearchTree::adder(Node *temp, int elem){
         if(temp->val > elem){
             temp->rch = newNode;
         }
+        return;
     }
     if(temp->lch == nullptr){
         if (temp->val > elem){
             Node *newNode = new Node(temp, nullptr, nullptr, elem);
             temp->lch = newNode;
+            return;
         }
         else{
             adder(temp->rch, elem);
@@ -51,10 +53,12 @@ void BinarySearchTree::adder(Node *temp, int elem){
         if (temp->val < elem){
             Node *newNode = new Node(temp, nullptr, nullptr, elem);
             temp->rch = newNode;
+            return;
         }
         else{
             adder(temp->lch,elem);
         }
+
     }
     if(temp->val > elem){
         adder(temp->lch,elem);
@@ -66,14 +70,14 @@ void BinarySearchTree::adder(Node *temp, int elem){
 
 void BinarySearchTree::findElem(int elem) {
     if(size == 0){
-        cout<<"Tree is empty"<<endl;
+        //cout<<"Tree is empty"<<endl;
     }
     else{
         Node *temp = finder(root, elem);
         if(temp != nullptr){
-            cout<<"Element founded!"<<endl;
+            //cout<<"Element founded!"<<endl;
         }
-        else cout<<"Element not founded!"<<endl;
+       // else cout<<"Element not founded!"<<endl;
     }
 }
 
@@ -93,6 +97,7 @@ Node* BinarySearchTree::finder(Node *temp, int elem){
         }
         finder(temp->rch, elem);
     }
+    return nullptr;
 }
 
 void BinarySearchTree::deleteElem(int elem) {
@@ -103,8 +108,77 @@ void BinarySearchTree::deleteElem(int elem) {
     else{
         Node *temp = finder(root, elem);
         if(temp != nullptr){
-            //deleter
+            deleter(temp);
         }
-        else cout<<"Element not founded"<<endl;
     }
+}
+
+void BinarySearchTree::deleter(Node *deletedNode){
+    if(deletedNode->lch!=nullptr && deletedNode->rch!=nullptr) {
+        Node* maxLeftTreeNode = getMaxNode(deletedNode->lch);
+        deletedNode->val = maxLeftTreeNode->val;
+        deleter(maxLeftTreeNode);
+        return;
+    }
+    else
+    {
+        if(deletedNode->lch!=nullptr) {
+            if(deletedNode==root) {
+                Node* newRoot = deletedNode->lch;
+                free(root);
+                root = newRoot;
+                return;
+            }
+            else
+            {
+                if(deletedNode == deletedNode->parent->lch) {
+                    deletedNode->parent->lch = deletedNode->lch;
+                }
+                else deletedNode->parent->rch = deletedNode->lch;
+            }
+        }
+        else
+        {
+            if(deletedNode->rch!=nullptr) {
+                if(deletedNode==root) {
+                    Node* newRoot = deletedNode->rch;
+                    free(root);
+                    root = newRoot;
+                    return;
+                }
+                else
+                {
+                    if(deletedNode == deletedNode->parent->rch) {
+                        deletedNode->parent->rch = deletedNode->rch;
+                    }
+                    else deletedNode->parent->lch = deletedNode->rch;
+                }
+            }
+            else
+            {
+                if(deletedNode==root) {
+                    free(root);
+                    root = nullptr;
+                    return;
+                }
+                else {
+                    if(deletedNode == deletedNode->parent->lch) {
+                        deletedNode->parent->lch = nullptr;
+                    }
+                    else
+                    {
+                        deletedNode->parent->rch = nullptr;
+                    }
+                }
+            }
+        }
+    }
+    free(deletedNode);
+}
+
+Node *BinarySearchTree::getMaxNode(Node *start) {
+    while(start->rch!= nullptr){
+        start = start->rch;
+    }
+    return start;
 }

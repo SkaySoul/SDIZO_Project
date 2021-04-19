@@ -21,13 +21,12 @@ private:
     void workWithArraylist() const;
     void workWithDLinkedList() const;
     void workWithBinaryHeap() const;
-    static long long int read_QPC();
+    void workWithBST() const;
 public:
     IOShell *reader;
     MainMenu();
     void start() const;
-
-    void workWithBST() const;
+    static long long int read_QPC();
 };
 
 

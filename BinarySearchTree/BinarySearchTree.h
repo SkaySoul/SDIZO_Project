@@ -13,6 +13,7 @@ using namespace std;
 class BinarySearchTree {
 private:
     Node *root;
+    void deleter(Node *elem);
 public:
     ~BinarySearchTree();
     void addElem(int elem);
@@ -25,6 +26,9 @@ public:
     BinarySearchTree(unsigned long size, int *arr);
 
     unsigned long size;
+
+
+    static Node *getMaxNode(Node *pNode);
 };
 
 

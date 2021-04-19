@@ -28,6 +28,7 @@ CMakeFiles/SDIZO_Project.dir/MainMenu/IOShell.cpp.obj
 CMakeFiles/SDIZO_Project.dir/MainMenu/MainMenu.cpp.obj
  C:/Users/hellf/CLionProjects/SDIZO_Project/ArrayList/ArrayList.h
  C:/Users/hellf/CLionProjects/SDIZO_Project/BinaryHeap/BinaryHeap.h
+ C:/Users/hellf/CLionProjects/SDIZO_Project/BinarySearchTree/BinarySearchTree.h
  C:/Users/hellf/CLionProjects/SDIZO_Project/DLinkedList/DLinkedList.h
  C:/Users/hellf/CLionProjects/SDIZO_Project/DLinkedList/Node.h
  C:/Users/hellf/CLionProjects/SDIZO_Project/MainMenu/IOShell.h
@@ -35,7 +36,10 @@ CMakeFiles/SDIZO_Project.dir/MainMenu/MainMenu.cpp.obj
  C:/Users/hellf/CLionProjects/SDIZO_Project/MainMenu/MainMenu.h
 CMakeFiles/SDIZO_Project.dir/main.cpp.obj
  C:/Users/hellf/CLionProjects/SDIZO_Project/ArrayList/ArrayList.h
+ C:/Users/hellf/CLionProjects/SDIZO_Project/BinaryHeap/BinaryHeap.h
+ C:/Users/hellf/CLionProjects/SDIZO_Project/BinarySearchTree/BinarySearchTree.h
+ C:/Users/hellf/CLionProjects/SDIZO_Project/DLinkedList/DLinkedList.h
+ C:/Users/hellf/CLionProjects/SDIZO_Project/DLinkedList/Node.h
  C:/Users/hellf/CLionProjects/SDIZO_Project/MainMenu/IOShell.h
  C:/Users/hellf/CLionProjects/SDIZO_Project/MainMenu/MainMenu.h
  C:/Users/hellf/CLionProjects/SDIZO_Project/main.cpp
- C:/Users/hellf/CLionProjects/SDIZO_Project/main.h

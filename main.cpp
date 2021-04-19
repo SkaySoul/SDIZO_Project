@@ -4,14 +4,22 @@
 
 
 #include <iostream>
-#include "main.h"
-#include "ArrayList/ArrayList.h"
 #include "MainMenu/IOShell.h"
+#include "ArrayList/ArrayList.h"
 #include "MainMenu/MainMenu.h"
+#include <utility>
+#include <windows.h>
+#include <iostream>
+#include <iomanip>
 
+int adder();
+
+long long int read_QPC();
 
 using namespace std;
- int main(){
-    MainMenu *mainMenu = new MainMenu();
-    mainMenu->start();
-}
+ int main() {
+     auto *mainMenu = new MainMenu();
+     mainMenu->start();
+ }
+
+
