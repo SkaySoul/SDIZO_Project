@@ -107,36 +107,36 @@ void DLinkedList::findElem(int elem) {
     }
 }
 
-//int DLinkedList::getElem(unsigned long pos) {
-//    if (pos>size-1){
-//        cout<<"Position is too big for list, this list contain only "<< getSize() <<" elements"<<endl;
-//
-//    }
-//    if (pos == 0){
-//        return head->value;
-//    }
-//    else if (pos == size-1){
-//        return tail->value;
-//    }
-//    else
-//    {
-//        if (pos < size % 2) {
-//            Node *temp = head;
-//            for (unsigned long i = 0; i < pos; i++) {
-//                temp = temp->next;
-//            }
-//            return temp->value;
-//        }
-//        if (pos > size % 2) {
-//            Node *temp = tail;
-//            for (unsigned long i = size - 1; i > pos; i--) {
-//                temp = temp->prev;
-//            }
-//            return temp->value;
-//        }
-//    }
-//    return 0;
-//}
+int DLinkedList::getElem(unsigned long pos) {
+    if (pos>size-1){
+        cout<<"Position is too big for list, this list contain only "<< getSize() <<" elements"<<endl;
+
+    }
+    if (pos == 0){
+        return head->value;
+    }
+    else if (pos == size-1){
+        return tail->value;
+    }
+    else
+    {
+        if (pos < size % 2) {
+            Node *temp = head;
+            for (unsigned long i = 0; i < pos; i++) {
+                temp = temp->next;
+            }
+            return temp->value;
+        }
+        if (pos > size % 2) {
+            Node *temp = tail;
+            for (unsigned long i = size - 1; i > pos; i--) {
+                temp = temp->prev;
+            }
+            return temp->value;
+        }
+    }
+    return 0;
+}
 
 
 void DLinkedList::addToPos(unsigned long pos, int elem){

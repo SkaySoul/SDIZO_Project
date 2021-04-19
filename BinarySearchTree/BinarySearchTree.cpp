@@ -70,14 +70,14 @@ void BinarySearchTree::adder(Node *temp, int elem){
 
 void BinarySearchTree::findElem(int elem) {
     if(size == 0){
-        //cout<<"Tree is empty"<<endl;
+        cout<<"Tree is empty"<<endl;
     }
     else{
         Node *temp = finder(root, elem);
         if(temp != nullptr){
-            //cout<<"Element founded!"<<endl;
+            cout<<"Element founded!"<<endl;
         }
-       // else cout<<"Element not founded!"<<endl;
+        else cout<<"Element not founded!"<<endl;
     }
 }
 

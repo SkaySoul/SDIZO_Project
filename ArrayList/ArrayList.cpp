@@ -148,11 +148,9 @@ void ArrayList::deleteElemOnPos(unsigned long pos) {
 }
 
 [[maybe_unused]] bool ArrayList::isEmpty() {
-    for (int i = 0;i<size-1;i++){
-        if (arr[i] != 0){
-            return true;
-        }
-    }
-    return false;
+  if(size!= 0){
+      return true;
+  }
+  else return false;
 }
 
